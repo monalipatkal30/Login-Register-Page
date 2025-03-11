@@ -1,0 +1,95 @@
+@charset "ISO-8859-1";
+
+body {
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('19198666.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Improved Container */
+.container {
+    width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+    background-color: rgba(255, 255, 255, 0.95); /* Brighter & more visible */
+    text-align: center;
+    backdrop-filter: blur(8px); /* Stronger blur effect */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Adds a subtle border */
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight zoom effect when hovered */
+}
+
+/* Heading Styling */
+h1 {
+    font-weight: bold;
+    color: #0017f8;
+    font-size: 28px;
+    text-shadow: 3px 3px 8px rgba(0, 23, 248, 0.4); /* Stronger glow effect */
+}
+
+/* Paragraph Styling */
+p {
+    margin: 20px 0;
+    line-height: 1.8; /* More spacing for readability */
+    font-size: 18px;
+    color: #222;
+}
+
+/* Buttons Instead of Links */
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(135deg, #007BFF, #0040FF); /* Gradient effect */
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.links a:hover {
+    background: linear-gradient(135deg, #0056b3, #002080);
+    transform: scale(1.1); /* Bigger hover effect */
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .links a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
